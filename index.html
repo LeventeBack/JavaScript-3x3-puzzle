@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairing game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="select-image-container">
+            <form data-selection-form>
+                <label for="selection">Tell me about what do you want to make puzzle!</label>
+                <input type="text" id="selection" required placeholder="select your topic" data-selection>
+                <button type="submit" class="btn">START</button>
+            </form>
+            <div class='restart hidden' data-restart-section>
+                <strong>Puzzle: <span data-puzzle-name></span></strong>
+                <button class="restart-btn btn" data-restart-btn>RESTART</button>
+            </div>
+        </div>
+        <div class="puzzle-container">
+            <div class="piece-container side" data-piece-container>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>
+                <div class="piece" data-piece draggable="true"></div>     
+            </div>
+            <div class="grid-container side" data-puzzle-container>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+        </div>
+      
+    </div>
+</body>
+</html>
